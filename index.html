@@ -13,52 +13,66 @@
   		margin: 0;
 
   	}
+  	/* for the better scroll animation of the page*/
+  	html {
+	scroll-behavior: smooth;
+	}
   	body{
   		background-color: rgba(11,156,49,0.5);
   	}
-  	h1{
-  		font-family: arial;
-  		color: green;
-  	}
-  	p{
-  		background-color:rgba(77,196,255,0.5);
-  	}
-
-  	ul{
-  		padding: 10px 30%;
+  	
+  	/* Nav bar */
+  	nav{
+  		overflow: hidden;
+  		position: fixed;
+  		top: 0;
+  		width: 100%;
   		background-color: rgba(11,156,49,0.8);
+  	}
+  	nav ul{
+  		padding: 10px 30px;
   		list-style: none;
-  		display: flex;
-  		flex-direction: row;
+   	}
 
-  	}
-
-  	li{
+  	nav li{
+  		display: inline;
+  		margin-left: 10px;
+  		display: inline;
   		
-  		margin-left: 100px;
   	}
 
-  	a{
+  	nav a{
+  		margin-left: 10px;
+  		float: left;
+  		display: block;
+  		padding: 10px;
   		color: white;
   		text-decoration: none;
   	}
-  	a:hover {
-  		padding: 5px;
+  	nav a:hover {
+  		padding: 10px;
   		color: black;
- 		background-color: #558776;
+ 		background-color: #A3EBB1;
 	}
+
+
   	#main_logo{
   		border: 5px solid black;
-  		margin: 30px;
+  		margin-top: 60px;
   		width: 150px;
   		height:  150px;
   		border-radius: 50%;
   	}
-  	
-
-  	h1{
-  		margin: 10px;
+	h1{
+		margin: 10px;
+  		font-family: arial;
+  		color: #116530;
   	}
+  	
+  	main{
+  		margin-bottom: 20px;
+  	}
+  	
   	h2{
   		text-align: center;
   		padding: 20px;
@@ -75,13 +89,34 @@
   	section img{
   		margin: 10px 10px; 
   	}
+  	.active{
+  		padding: 10px;
+  		color: black;
+  		font-weight: bolder;
+ 		background-color: #A3EBB1;
+  	}
+  	footer div{
+  		font-size: 18px;
+  		font-weight: bold;
+  		padding: 10px;
+  		text-align: center;
+  		background-color: #18A558;
+  	}
+  	footer div a:hover {
+  		color: white;
+
+  	}
   </style>
 
 </head>
 <body>
-<center>
+
+	<!--nav bar to easily track the content of the webpage -->
 	<nav>
 		<ul>
+			<li>
+				<a href="#home" class="active">HOME</a>
+			</li>
 			<li>
 				<a href="#fish">FISH</a>
 			</li>
@@ -94,43 +129,66 @@
 		</ul>
 	</nav>
 
-<div>
+<div id="home">	
+	<center>
 	<img src="Images/logo.jpg" id="main_logo" />
-  <h1>Aldrin Harvy E. De Chavez</h1>
-<h3><strong>Bsit Student </strong> and <em>Exotic, Fish keeper</em>  <br>
-I am a College Student at CSTC and member of Philippine exotic keepers </h3>
-</center>
-<hr width="100%" color="#000" size="4">
+  	<h1>Aldrin Harvy E. De Chavez</h1>
+	<h3><strong>Bsit Student </strong> and <em>Exotic, Fish keeper</em>  <br>
+		I am a College Student at CSTC and member of Philippine exotic keepers </h3>
+	</center>
+	<hr width="100%" color="#000" size="4">
+
+	
+</div>
 
 <h2><strong> Exotic Pet List </strong></h2>
 
+<main>
 
-<section id="fish">
+	<section id="fish">
+		<div>
+			<p>Betta Fish</p>
+			<img src="Images/betta1.jpg" alt="fish" width="200px" height="150px" />
+			<img src="Images/betta2.jpg" alt="fish" width="200px" height="150px" />
+			<img src="Images/betta3.jpg" alt="fish" width="200px" height="150px" />
+
+			<p>Guppy Fish</p>
+			<img src="Images/fish.png" alt="fish" width="200px" height="150px" />
+			<img src="Images/guppy2.jpg" alt="fish" width="200px" height="150px" />
+			<img src="Images/guppy1.jpg" alt="fish" width="200px" height="150px" />
+		</div>
+	</section>
+
+
+	<section id="gecko">
+		<div>
+			<p>Leopard Gecko</p>
+			<img src="Images/gecko.jpg" alt="gecko" width="200px" height="150px" />
+			<img src="Images/gecko1.jpg" alt="gecko" width="200px" height="150px" />
+			<img src="Images/gecko2.jpg" alt="gecko" width="200px" height="150px" />
+		</div>
+		
+	</section>
+	<section id="tarantula">
+		<div>
+			<p>Tarantula</p>
+			<img src="Images/tarantula.jpg" alt="tarantula" width="200px" height="150px" />
+			<img src="Images/tarantula1.jpg" alt="tarantula" width="200px" height="150px" />
+			<img src="Images/tarantula2.jpg" alt="tarantula" width="200px" height="150px" />
+		</div>
+		
+	</section>
+</main>	
+
+<footer>
 	<div>
-		<p>Betta Fish</p>
-		<img src="Images/betta1.jpg" alt="fish" width="200px" height="150px" />
-		<img src="Images/betta2.jpg" alt="fish" width="200px" height="150px" />
-		<img src="Images/betta3.jpg" alt="fish" width="200px" height="150px" />
-
-		<p>Guppy Fish</p>
-		<img src="Images/fish.png" alt="fish" width="200px" height="150px" />
-		<img src="Images/guppy2.jpg" alt="fish" width="200px" height="150px" />
-		<img src="Images/guppy1.jpg" alt="fish" width="200px" height="150px" />
-	</div>
-</section>
-
-
-<section id="gecko">
-	<div>
-		<p>Leopard Gecko</p>
-		<img src="Images/gecko.jpg" alt="gecko" width="200px" height="150px" />
-		<img src="Images/gecko1.jpg" alt="gecko" width="200px" height="150px" />
-		<img src="Images/gecko2.jpg" alt="gecko" width="200px" height="150px" />
+		<p>You may contact me on: </p>
+		<p>Github: <a href="https://github.com/aldrinharvy">aldrinharvy</a></p>
+		<p>Facebook: <a href="https://www.facebook.com/aldrin.harvy">Aldrin E. De Chavez(Harvy)</a></p>
 	</div>
 	
-</section>
-	
-	
+</footer>
+
 </div>
 </body>
 </html>
