@@ -11,7 +11,6 @@
   	/* applies in whole page*/
   	*{
   		margin: 0;
-
   	}
   	/* for the better scroll animation of the page*/
   	html {
@@ -55,7 +54,7 @@
  		background-color: #A3EBB1;
 	}
 
-
+	/**/
   	#main_logo{
   		border: 5px solid black;
   		margin-top: 60px;
@@ -69,6 +68,7 @@
   		color: #116530;
   	}
   	
+  	/*main content*/
   	main{
   		margin-bottom: 20px;
   	}
@@ -89,12 +89,14 @@
   	section img{
   		margin: 10px 10px; 
   	}
+  	/*different shading of the active page*/
   	.active{
   		padding: 10px;
   		color: black;
   		font-weight: bolder;
  		background-color: #A3EBB1;
   	}
+
   	footer div{
   		font-size: 18px;
   		font-weight: bold;
@@ -104,7 +106,6 @@
   	}
   	footer div a:hover {
   		color: white;
-
   	}
   </style>
 
@@ -130,21 +131,23 @@
 	</nav>
 
 <div id="home">	
+
 	<center>
 	<img src="Images/logo.jpg" id="main_logo" />
   	<h1>Aldrin Harvy E. De Chavez</h1>
 	<h3><strong>Bsit Student </strong> and <em>Exotic, Fish keeper</em>  <br>
 		I am a College Student at CSTC and member of Philippine exotic keepers </h3>
 	</center>
+
+	<!-- inline styling -->
 	<hr width="100%" color="#000" size="4">
 
-	
 </div>
 
 <h2><strong> Exotic Pet List </strong></h2>
 
 <main>
-
+	<!-- place an id for easily tracking the content using the navigation bar -->
 	<section id="fish">
 		<div>
 			<p>Betta Fish</p>
@@ -182,6 +185,7 @@
 
 <footer>
 	<div>
+		<!-- the two hyperlink pages are placed here -->
 		<p>You may contact me on: </p>
 		<p>Github: <a href="https://github.com/aldrinharvy">aldrinharvy</a></p>
 		<p>Facebook: <a href="https://www.facebook.com/aldrin.harvy">Aldrin E. De Chavez(Harvy)</a></p>
