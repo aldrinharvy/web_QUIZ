@@ -16,12 +16,27 @@
   	html {
 	scroll-behavior: smooth;
 	}
+
   	body{
-  		background-color: rgba(11,156,49,0.5);
+  		/*background-color: rgba(15,146,0,.7);*/
+
+  		margin: 0 50px 0 50px;
+  		background-image: url(Images/grass.jpg);
+  		 background-repeat:no-repeat;
+
+    background-size:100% 100%;
+
   	}
   	
+  	#backImage{
+  		
+  		
+    
+
+  	}
   	/* Nav bar */
   	nav{
+  		margin-left:-50px;
   		overflow: hidden;
   		position: fixed;
   		top: 0;
@@ -37,9 +52,7 @@
   		display: inline;
   		margin-left: 10px;
   		display: inline;
-  		
   	}
-
   	nav a{
   		margin-left: 10px;
   		float: left;
@@ -65,7 +78,8 @@
 	h1{
 		margin: 10px;
   		font-family: arial;
-  		color: #116530;
+  		text-shadow: 2px 3px #000000;
+  		color: rgb(74,229,74);
   	}
   	
   	/*main content*/
@@ -96,22 +110,56 @@
   		font-weight: bolder;
  		background-color: #A3EBB1;
   	}
+	/*table*/
+	table{
 
+	}
+	table, th, td {
+
+ 	 border: 2px solid #3b5284;
+ 	 border-collapse: collapse;
+	}
+	/*form*/
+	form{
+		margin-top: 30px;
+	}
+	form p{
+		margin: 10px 0 10px 0;
+	}
+
+	#betta, #gecko, #tarantula, #guppy{
+		margin-left: 10px;
+		font-size: 20px;
+		font-weight: bolder;
+	}
+
+	.animalName{
+		font-weight: bolder;
+
+	}
+	.animalDefinition{
+		font-size: 18px;
+	}
   	footer div{
+
+  		margin: 0 -50px 0 -50px;
   		font-size: 18px;
   		font-weight: bold;
   		padding: 10px;
   		text-align: center;
-  		background-color: #18A558;
+  		background-color:rgb(74,229,74);
+  	}
+  	footer div a {
+  		color: black;
   	}
   	footer div a:hover {
-  		color: white;
+  		color: rgb(164,251,166);
   	}
   </style>
 
 </head>
 <body>
-
+	<div id="backImage">
 	<!--nav bar to easily track the content of the webpage -->
 	<nav>
 		<ul>
@@ -119,7 +167,10 @@
 				<a href="#home" class="active">HOME</a>
 			</li>
 			<li>
-				<a href="#fish">FISH</a>
+				<a href="#betta">BETTA</a>
+			</li>
+			<li>
+				<a href="#guppy">GUPPY</a>
 			</li>
 			<li>
 				<a href="#gecko">GECKO</a>
@@ -144,43 +195,107 @@
 
 </div>
 
-<h2><strong> Exotic Pet List </strong></h2>
+
 
 <main>
 	<!-- place an id for easily tracking the content using the navigation bar -->
-	<section id="fish">
-		<div>
-			<p>Betta Fish</p>
-			<img src="Images/betta1.jpg" alt="fish" width="200px" height="150px" />
-			<img src="Images/betta2.jpg" alt="fish" width="200px" height="150px" />
-			<img src="Images/betta3.jpg" alt="fish" width="200px" height="150px" />
 
-			<p>Guppy Fish</p>
-			<img src="Images/fish.png" alt="fish" width="200px" height="150px" />
-			<img src="Images/guppy2.jpg" alt="fish" width="200px" height="150px" />
-			<img src="Images/guppy1.jpg" alt="fish" width="200px" height="150px" />
-		</div>
-	</section>
+	<table style="width:100%">
+		<tr>
+			<th colspan="3"><h2>Exotic Pet Information</h2></th>
+		</tr>
+		<tr>
+			<td th colspan="3" id="betta">Betta</td>
+		</tr>
+		<tr>
+			<td class="animalName">Crown Tail Betta</td>
+			<td>
+				<img src="Images/betta1.jpg" alt="fish" width="200px" height="150px" />
+				
+			</td>
+			<td class="animalDefinition">Crowntail bettas are one of the most common species of betta fish and are colloquially referred to simply as bettas, or their behavioral name, Siamese fighting fish.</td>
+		</tr>
+		<tr>
+			<td class="animalName">Double Tail Betta</td>
+			<td><img src="Images/betta2.jpg" alt="fish" width="200px" height="150px" /></td>
+			<td class="animalDefinition">It isn’t a simple split in the tail. There are two caudal peduncles for the tail to attach to, as well. The tails aren’t always identical in size, though (for show bettas), that’s the ideal.</td>
+		</tr>
+		<tr>
+			<td class="animalName">Rosetail Betta</td>
+			<td><img src="Images/betta3.jpg" alt="fish" width="200px" height="150px" /></td>
+			<td class="animalDefinition">Rosetail bettas developed out of the halfmoon betta. The difference is extensive branching of the rays within the tail itself.</td>
+		</tr>
+
+		<tr>
+			<td th colspan="3" id="guppy">Guppy</td>
+		</tr>
+		<tr>
+			<td class="animalName">Blue Grass</td>
+			<td><img src="Images/guppy3.jpg" alt="fish" width="200px" height="150px" /></td>
+			<td class="animalDefinition"> In the head section to the base of the tail is yellow, while the creature on the fins and tail are blue and combined with black spots.</td>
+		</tr>
+		<tr>
+			<td class="animalName">Full Red Albino </td>
+			<td><img src="Images/guppy2.jpg" alt="fish" width="200px" height="150px" /></td>
+			<td class="animalDefinition">This guppy boasts a vivid, solid red coloration that typically covers most of its body in the case of males.</td>
+		</tr>
+		<tr>
+			<td class="animalName">Red Grass Metalhead</td>
+			<td><img src="Images/guppy1.jpg" alt="fish" width="200px" height="150px" /></td>
+			<td class="animalDefinition">This is a Red Grass Metalhead guppy strain that has a BEAUTIFUL red grass pattern tail. </td>
+		</tr>
 
 
-	<section id="gecko">
-		<div>
-			<p>Leopard Gecko</p>
-			<img src="Images/gecko.jpg" alt="gecko" width="200px" height="150px" />
-			<img src="Images/gecko1.jpg" alt="gecko" width="200px" height="150px" />
-			<img src="Images/gecko2.jpg" alt="gecko" width="200px" height="150px" />
-		</div>
-		
-	</section>
-	<section id="tarantula">
-		<div>
-			<p>Tarantula</p>
-			<img src="Images/tarantula.jpg" alt="tarantula" width="200px" height="150px" />
-			<img src="Images/tarantula1.jpg" alt="tarantula" width="200px" height="150px" />
-			<img src="Images/tarantula2.jpg" alt="tarantula" width="200px" height="150px" />
-		</div>
-		
-	</section>
+		<tr>
+			<td th colspan="3" id="gecko">Leopard Gecko</td>
+		</tr>
+		<tr>
+			<td class="animalName">Mack Snow Leopard Gecko</td>
+			<td><img src="Images/geckov1.png" alt="gecko" width="200px" height="150px" /></td>
+			<td class="animalDefinition">The Mack Snow gene is the heterozygous form of the gene.They are either white or pale yellow in color with black bands or spots.Their color tends to darken as they age.</td>
+		</tr>
+		<tr>
+			<td class="animalName">Diablo Blanco Leopard Gecko</td>
+			<td><img src="Images/gecko1.jpg" alt="gecko" width="200px" height="150px" /></td>
+			<td class="animalDefinition">The Diablo Blanco morph is a combination of the Blizzard trait and the RAPTORs. Essentially, a Diablo Blanco is a combination of 4 recessive traits, Blizzards, Tremper Albinos, Tremper Eclipse, and Patternless Stripe.</td>
+		</tr>
+		<tr>
+			<td class="animalName">Black Night Leopard Gecko</td>
+			<td><img src="Images/gecko2.jpg" alt="gecko" width="200px" height="150px" /></td>
+			<td class="animalDefinition">The Black Night Leopard Gecko is a rare leopard gecko morph that has been bred for its color. It is a very dark morph, or, to give it its proper technical term, it is a hypermelanistic leopard gecko.</td>
+		</tr>
+
+
+		<tr>
+			<td th colspan="3" id="tarantula">Tarantula</td>
+		</tr>
+		<tr>
+			<td class="animalName">Poecilotheria Metallica(Gooty Sapphire Ornamental)</td>
+			<td><img src="Images/tarantula.jpg" alt="tarantula" width="200px" height="150px" /></td>
+			<td class="animalDefinition">P. metallica has been bred in captivity for ten years and is popular with tarantula enthusiasts.As with most tarantulas, the spider's sex can influence price - females generally being more expensive because of their longer life.</td>
+		</tr>
+		<tr>
+			<td class="animalName">Brachypelma hamorii(Brachypelma hamorii)</td>
+			<td><img src="Images/tarantula1.jpg" alt="tarantula" width="200px" height="150px" /></td>
+			<td class="animalDefinition">The species is a large spider, adult females having a total body length over 50 mm and males having legs up to 75 mm long. </td>
+		</tr>
+		<tr>
+			<td class="animalName">Tliltocatl albopilosus(curlyhair tarantula)</td>
+			<td><img src="Images/tarantula2.jpg" alt="tarantula" width="200px" height="150px" /></td>
+			<td class="animalDefinition">The species' native range is Nicaragua and Costa Rica. They are largely terrestrial, opportunistically burrowing spiders.</td>
+		</tr>
+
+	</table>
+
+	<form action="mailto:aldrin_harvy@yahoo.com" method="post" enctype="text/plain">
+		<p><strong>Write down your Feedback:</strong></p>
+		<textarea name="message" style="width:500px; height:100px;"></textarea><br>
+		<input type="submit" value="Submit">
+
+	</form>
+
+
+
 </main>	
 
 <footer>
@@ -193,6 +308,7 @@
 	
 </footer>
 
+</div>
 </div>
 </body>
 </html>
